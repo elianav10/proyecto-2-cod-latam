@@ -18,5 +18,3 @@ function checkElementLocation() {
   $(window).on('scroll', function() {
     checkElementLocation();
   });
-
- alert("Soy un cartelito");
