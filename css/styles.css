@@ -123,6 +123,13 @@ section {
     padding: .5em;
 }
 
+.CV:hover {
+    background-color: #fff;
+    color: #af599e;
+    border: #aa3893 solid 2px;
+}
+
+
 .Foto {
     width: 400px;
     height: 400px;
@@ -176,6 +183,10 @@ section {
     margin-top: 20%;
 }
 
+.Hablemos article { 
+    text-align: justify;
+}
+
 footer {
     background-color:#af599e;
     height: 90px;
@@ -207,6 +218,14 @@ h2 {
     font-size: 28px;
 }
 
+#wspBtn {
+    height: 70px;
+    width: 70px;
+    position:fixed;
+    bottom: 12%;
+    right: 1%;
+}
+
 /* Animacion */
 
 .to-fade-in {
@@ -235,7 +254,7 @@ h2 {
         width: 110%;
         height: 110%;
     }
-  }
+}
 
 /* Media Querys */
 
@@ -263,4 +282,13 @@ h2 {
     #inicio > article {
         width: 70%;
     }
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
 }  
+
