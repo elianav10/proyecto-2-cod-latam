@@ -74,20 +74,18 @@ header {
     background-color: #fff;
     display: flex;  
     z-index: 100; 
+    align-items: center;
 }
 
 header nav {
     display: flex;
-    width: 90%;
     margin:0 auto;
 }  
 
 nav ul {  
     list-style: none;
-    height: 100%;
     text-align: center;
     margin:0 auto;
-    display: inline-block;
 }
 
 nav li {   
@@ -98,6 +96,16 @@ nav li {
 nav a {
     padding: 20px;
     display:block;
+}
+
+#Right
+{
+    margin-right: 0%;
+}
+
+#Left
+{
+    margin-left: 1vh;
 }
    
 section {
@@ -129,14 +137,14 @@ section {
     border: #aa3893 solid 2px;
 }
 
-
 .Foto {
-    width: 400px;
-    height: 400px;
+    width: 80%;
+    height: 80%;
     border-radius: 100%;
     display:block;
     margin:0 auto;
     margin-bottom: 30px;
+    margin-top: 100px;
 }
 
 #contacto  img { 
@@ -258,10 +266,24 @@ h2 {
 
 /* Media Querys */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px) /*PC*/
+{
+    #Right
+    {
+        float: right;
+        margin-right: 10%;
+    }
+
+    #Left
+    {
+        float: left;
+        margin-left: 10%;
+    }
+
     .Foto { 
         margin-top: 100px; 
-
+        width: 400px;
+        height: 400px;
     }
 
     #contacto ul { 
@@ -269,7 +291,7 @@ h2 {
     }
 
     #contacto li{
-        display: block ;
+        display: block;
         margin: 0 auto;
         width: 25%;
     }   
